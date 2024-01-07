@@ -1,0 +1,16 @@
+@import '../abstract/variaveis';
+@import '../abstract/base';
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    .carteira,
+    .notificacao{
+        color: $cor-icon;
+        margin: 1.4rem 2rem;
+    }
+}
+
+
