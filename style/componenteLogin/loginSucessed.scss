@@ -1,0 +1,75 @@
+@import '../abstract/variaveis';
+@import '../abstract/base';
+
+.sucessedChange.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .sucessedText{
+        line-height: 1.5;
+        text-align: center;
+        margin: 6rem 0 0 0;
+        font-size: 20px;
+        color: $cor-textWhite;
+        text-shadow: $cor-textoSucesso 2px -1px, $cor-textoSucesso -1px 1px, $cor-textoSucesso 3px 1px;
+        letter-spacing: 1.6px;
+    }
+} 
+
+.emailForm{
+    margin-top: 22px;
+    .buttonForm{
+        font-size: 15px;
+        padding: 0.6rem 1.4rem;
+        border: 2px solid $cor-textoSucesso;
+        background-color: $cor-chamativa;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        color: $cor-textoSucesso;
+        font-weight: bold;
+        transition: all 0.3s ease-in;
+    }
+}
+
+.emailForm > button:hover{
+    color: $cor-chamativa;
+    border: 2px solid $cor-chamativa;
+    background-color: $cor-textoSucesso;
+}
+
+.textEmail::before{
+    content: '\f0e0';
+    font-family: 'Font Awesome 6 Free';
+    font-size: 24px;
+    padding: 0 0.8rem 0rem 1rem;
+}
+
+.textEmail{
+    margin: 3rem 0 4rem;
+    color: $cor-textoSucesso;
+    text-transform: uppercase;
+    padding: 0 1rem 0.4rem 0px;
+    border-bottom: 4px solid $cor-chamativa;
+}
+
+.sucessedChange.hidden {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.sucessedChange.show {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+@media screen {
+    @media (min-width: 525px){
+    .sucessedChange.show .sucessedText {
+        margin: 8rem 0 -2rem 0
+        }
+    }
+}

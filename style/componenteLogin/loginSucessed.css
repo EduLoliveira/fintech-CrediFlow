@@ -1,0 +1,70 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+.sucessedChange.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sucessedChange.show .sucessedText {
+  line-height: 1.5;
+  text-align: center;
+  margin: 6rem 0 0 0;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: #0E87CB 2px -1px, #0E87CB -1px 1px, #0E87CB 3px 1px;
+  letter-spacing: 1.6px;
+}
+
+.emailForm {
+  margin-top: 22px;
+}
+.emailForm .buttonForm {
+  font-size: 15px;
+  padding: 0.6rem 1.4rem;
+  border: 2px solid #0E87CB;
+  background-color: #FFD130;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: #0E87CB;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+}
+
+.emailForm > button:hover {
+  color: #FFD130;
+  border: 2px solid #FFD130;
+  background-color: #0E87CB;
+}
+
+.textEmail::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 6 Free";
+  font-size: 24px;
+  padding: 0 0.8rem 0rem 1rem;
+}
+
+.textEmail {
+  margin: 3rem 0 4rem;
+  color: #0E87CB;
+  text-transform: uppercase;
+  padding: 0 1rem 0.4rem 0px;
+  border-bottom: 4px solid #FFD130;
+}
+
+.sucessedChange.hidden {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.sucessedChange.show {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+@media screen and (min-width: 525px) {
+  .sucessedChange.show .sucessedText {
+    margin: 8rem 0 -2rem 0;
+  }
+}/*# sourceMappingURL=loginSucessed.css.map */

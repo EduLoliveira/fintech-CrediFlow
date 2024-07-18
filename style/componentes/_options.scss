@@ -1,0 +1,74 @@
+
+@import '../abstract/variaveis';
+@import '../abstract/base';
+
+.containerOptions {
+    display: flex;
+    .titleOptions {
+        width: 100%;
+        height: auto;
+        min-height: 80px; 
+        min-width: 80px;
+        color: $cor-titulo;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        margin: 2% 0.4rem;
+        border: 1.6px solid $cor-borda;
+        .gastos_fixos-IMG, .divida_investimento-IMG, .desejos_rendaSOS-IMG {
+            width: 100%;
+            }
+        }
+    }
+.optionsText{
+    text-align: center;
+    background-color: #fff;
+    color: #8B4513;
+    font-size: 15px;
+}
+
+
+@media screen {
+    @media (min-width: 260px) and (max-width: 319px) {
+        .containerOptions{
+            gap: 0;
+            .titleOptions{
+                margin: 2% 0.3rem;
+                min-width: 70px;
+            .optionsText {
+                font-size: 13px;
+                padding: 4px 2px;
+                background: #fff;
+            }
+        }
+    }
+}
+
+@media (min-width: 370px) {
+    .containerOptions {
+        gap: 0.6em;
+        .titleOptions{
+            .optionsText {
+                font-size: 18px;
+                padding: 2px 0px;
+                font-family: jomhuria;
+                font-weight: 400;
+                .brOptions{
+                    display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen {
+    @media (min-width: 560px) {
+        .containerOptions{
+            .titleOptions{
+            .optionsText {
+                font-size: 22px;
+                }
+            }
+        }
+    }
+}

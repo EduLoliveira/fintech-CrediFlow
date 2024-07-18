@@ -1,0 +1,91 @@
+@import '../abstract/variaveis';
+@import '../abstract/base';
+ 
+.containerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40% 0px 0;
+        .inputsForm{
+            margin: 0.8rem 0 3rem 0.8rem;
+            padding: 5px 18px;
+            border: transparent;
+            border-bottom: 1px solid $cor-borda;
+        }
+    }
+
+.titleForm{
+    font-size: 18px;
+    margin: 0 0 2rem -2rem;
+    color: $cor-textWhite;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    text-shadow: $cor-titulo 2px -1px, 
+    $cor-titulo -1px 1px, $cor-titulo 3px 1px;
+}
+
+.smallForm {
+    margin-left: -9.6rem;
+    color: $cor-atencao;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footerLogin{
+    display: flex;
+    justify-content: center;
+    margin-top: 6.6rem;
+    .footerBtn { 
+        transition: 0.5s;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: $cor-textWhite;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0.8rem 5.5rem;
+        border: 3px solid $cor-btn;
+        background-color: $cor-btnsERRO;
+        border-radius: 8px;
+        opacity: 0.8;
+    }
+}
+
+.footerBtn:hover {
+    color: $cor-btnsERRO;
+    background-color: $cor-btn;
+    border: 2px solid $cor-btnsERRO;
+    box-shadow: 10px 10px 15px 6px rgba(255, 34, 34, 0.8);   
+}
+
+@media screen {
+    @media (min-width: 525px){
+    .containerForm{
+        margin: 30% 0px 0;
+        }
+    }
+}
+
+@media screen {
+    @media (min-width: 715px){
+    .containerForm {
+        margin: 26% 0px 0;
+        }
+    }
+}
+
+@media screen {
+    @media (min-width: 850px){
+    .containerForm{
+        margin: 22% 0px 0;
+        }
+    }
+}
+
+@media screen {
+    @media (min-width: 1024px){
+    .containerForm{
+        margin: 16% 0px 0;
+        }
+    }
+}
